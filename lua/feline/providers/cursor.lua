@@ -39,13 +39,16 @@ function M.position(_, opts)
     local col_str = string.rep(' ', colnr_min_width - math.floor(math.log10(col)) - 1)
         .. tostring(col)
 
+    local lines_str = tostring(api.nvim_buf_line_count(0))
+
     if opts.format then
         local str = opts.format
         str = str:gsub('{line}', line_str)
         str = str:gsub('{col}', col_str)
+        str = str:gsub('{lines}', lines_str)
         return str
     else
-        return string.format('%s:%s', line_str, col_str)
+        return string.format('%s:%s T: %s', line_str, col_str, lines_str)
     end
 end
 
