@@ -48,8 +48,8 @@ M.statusline.icons.active[1] = {
             style = 'bold',
         },
         left_sep = {
-            { str = 'right_filled', hl = { bg = '#1111AA', fg = 'black'  } },
-            { str = ' ', hl = { bg = '#1111AA', fg = 'black'  } },
+            { str = 'right_filled', hl = { bg = '#1111AA', fg = 'black' } },
+            { str = ' ', hl = { bg = '#1111AA', fg = 'black' } },
         },
         right_sep = {
             { str = ' ', hl = { bg = '#1111AA', fg = 'NONE' } },
@@ -82,6 +82,15 @@ M.statusline.icons.active[1] = {
                     bg = 'bg',
                 },
             },
+        },
+    },
+    {
+        provider = 'pastemode',
+        left_sep = ' ',
+        hl = {
+            fg = 'white',
+            bg = 'red',
+            style = 'bold',
         },
     },
     {

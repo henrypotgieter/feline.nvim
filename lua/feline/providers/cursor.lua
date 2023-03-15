@@ -52,6 +52,15 @@ function M.position(_, opts)
     end
 end
 
+function M.pastemode()
+    if vim.opt.paste:get() then
+        local status = ' PASTE '
+        return status
+    else
+        return ""
+    end
+end
+
 function M.line_percentage()
     local curr_line = api.nvim_win_get_cursor(0)[1]
     local lines = api.nvim_buf_line_count(0)

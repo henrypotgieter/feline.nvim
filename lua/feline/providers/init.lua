@@ -15,6 +15,7 @@ local get_provider_category = {
     vi_mode = 'vi_mode',
 
     position = 'cursor',
+    pastemode = 'cursor',
     line_percentage = 'cursor',
     scroll_bar = 'cursor',
     search_count = 'cursor',
