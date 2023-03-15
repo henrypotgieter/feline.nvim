@@ -44,7 +44,7 @@ return {
                 ['NORMAL'] = 'green',
                 ['OP'] = 'green',
                 ['INSERT'] = 'red',
-                ['VISUAL'] = 'skyblue',
+                ['VISUAL'] = 'orange',
                 ['LINES'] = 'skyblue',
                 ['BLOCK'] = 'skyblue',
                 ['REPLACE'] = 'violet',
