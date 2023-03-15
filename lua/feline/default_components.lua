@@ -27,7 +27,7 @@ M.statusline.icons.active[1] = {
     {
         provider = '▊ ',
         hl = {
-            fg = 'skyblue',
+            fg = '#AA1133',
         },
     },
     {
@@ -44,16 +44,16 @@ M.statusline.icons.active[1] = {
         provider = 'file_info',
         hl = {
             fg = 'white',
-            bg = 'oceanblue',
+            bg = '#1111AA',
             style = 'bold',
         },
         left_sep = {
-            'slant_left_2',
-            { str = ' ', hl = { bg = 'oceanblue', fg = 'NONE' } },
+            { str = 'right_filled', hl = { bg = '#1111AA', fg = 'black'  } },
+            { str = ' ', hl = { bg = '#1111AA', fg = 'black'  } },
         },
         right_sep = {
-            { str = ' ', hl = { bg = 'oceanblue', fg = 'NONE' } },
-            'slant_right_2',
+            { str = ' ', hl = { bg = '#1111AA', fg = 'NONE' } },
+            'right_filled',
             ' ',
         },
     },
@@ -62,7 +62,7 @@ M.statusline.icons.active[1] = {
         right_sep = {
             ' ',
             {
-                str = 'slant_left_2_thin',
+                str = 'right',
                 hl = {
                     fg = 'fg',
                     bg = 'bg',
@@ -76,7 +76,7 @@ M.statusline.icons.active[1] = {
         right_sep = {
             ' ',
             {
-                str = 'slant_right_2_thin',
+                str = 'right',
                 hl = {
                     fg = 'fg',
                     bg = 'bg',
