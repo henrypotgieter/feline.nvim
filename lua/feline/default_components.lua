@@ -59,6 +59,10 @@ M.statusline.icons.active[1] = {
     },
     {
         provider = 'file_size',
+        right_sep = ' ',
+    },
+    {
+        provider = 'file_perms',
         right_sep = {
             ' ',
             {
