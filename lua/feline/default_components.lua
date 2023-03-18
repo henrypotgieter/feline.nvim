@@ -94,6 +94,9 @@ M.statusline.icons.active[1] = {
         },
     },
     {
+        provider = 'isroot',
+    },
+    {
         provider = 'diagnostic_errors',
         hl = { fg = 'red' },
     },

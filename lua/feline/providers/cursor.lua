@@ -57,7 +57,15 @@ function M.pastemode()
         local status = ' PASTE '
         return status
     else
-        return ""
+        return ''
+    end
+end
+
+function M.isroot()
+    if vim.g.isroot then
+        return ' 💪 '
+    else
+        return ''
     end
 end
 

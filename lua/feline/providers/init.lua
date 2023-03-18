@@ -16,6 +16,7 @@ local get_provider_category = {
 
     position = 'cursor',
     pastemode = 'cursor',
+    isroot = 'cursor',
     line_percentage = 'cursor',
     scroll_bar = 'cursor',
     search_count = 'cursor',
