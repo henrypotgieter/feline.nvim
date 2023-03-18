@@ -63,7 +63,9 @@ end
 
 function M.isroot()
     if vim.g.isroot then
-        return ' 💪 '
+        return ' 💪'
+    elseif vim.g.username then
+        return ' ' .. vim.g.username
     else
         return ''
     end

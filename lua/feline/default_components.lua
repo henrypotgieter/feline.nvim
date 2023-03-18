@@ -85,6 +85,25 @@ M.statusline.icons.active[1] = {
         },
     },
     {
+        provider = 'isroot',
+        hl = {
+            fg = '#6393EB',
+        },
+        left_sep = {
+            { str = ' U:', hl = { bg = bg, fg = fg } },
+        },
+        right_sep = {
+            ' ',
+            {
+                str = 'right',
+                hl = {
+                    fg = 'fg',
+                    bg = 'bg',
+                },
+            },
+        }
+    },
+    {
         provider = 'pastemode',
         left_sep = ' ',
         hl = {
@@ -92,9 +111,6 @@ M.statusline.icons.active[1] = {
             bg = 'red',
             style = 'bold',
         },
-    },
-    {
-        provider = 'isroot',
     },
     {
         provider = 'diagnostic_errors',
