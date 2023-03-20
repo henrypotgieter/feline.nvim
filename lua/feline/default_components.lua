@@ -276,6 +276,30 @@ M.statusline.icons.active[1] = {
         },
     },
     {
+        provider = 'hlsy',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'hlsn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
         provider = 'diagnostic_errors',
         hl = { fg = 'red' },
     },

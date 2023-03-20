@@ -115,4 +115,20 @@ function M.diagn()
     end
 end
 
+function M.hlsy()
+    if vim.o.hlsearch == true then
+        return ' HL '
+    else
+        return ''
+    end
+end
+
+function M.hlsn()
+    if vim.o.hlsearch == false then
+        return ' HL '
+    else
+        return ''
+    end
+end
+
 return M

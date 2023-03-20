@@ -36,6 +36,8 @@ local get_provider_category = {
     wrn = 'toggles',
     diagy = 'toggles',
     diagn = 'toggles',
+    hlsy = 'toggles',
+    hlsn = 'toggles',
 
 
     file_info = 'file',
