@@ -61,7 +61,6 @@ local function get_unique_filename(filename, shorten)
     return string.reverse(string.sub(filename, 1, index))
 end
 
-
 -- Get path separator depending on OS
 local function get_path_separator()
     if jit then
@@ -79,12 +78,21 @@ end
 local default_separator = get_path_separator()
 
 function M.file_perms()
+    local function file_exists(name)
+        local f = io.open(name, 'r')
+        if f ~= nil then
+            io.close(f)
+            return true
+        else
+            return false
+        end
+    end
     local filename = api.nvim_buf_get_name(0)
-    if filename then
+    if filename and file_exists(vim.fn.expand('%')) then
         local perms = io.popen('ls -la ' .. filename .. " | awk '{print $1}'")
         return perms:read()
     else
-        return ''
+        return 'N/A'
     end
 end
 
