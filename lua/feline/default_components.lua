@@ -105,14 +105,173 @@ M.statusline.icons.active[1] = {
                     bg = 'bg',
                 },
             },
-        }
+        },
     },
     {
-        provider = 'pastemode',
+        provider = 'relnumy',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
         left_sep = ' ',
         hl = {
-            fg = 'white',
-            bg = 'red',
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'relnumn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'numy',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'numn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'bly',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'bln',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'diagy',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'diagn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'spy',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'spn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'wry',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'wrn',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'pastemodey',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#000044',
+            bg = '#22EE33',
+            style = 'bold',
+        },
+    },
+    {
+        provider = 'pastemoden',
+        enabled = function()
+           return vim.g.toggles_visible
+        end,
+        left_sep = ' ',
+        hl = {
+            fg = '#FFFFFF',
+            bg = '#EE3322',
             style = 'bold',
         },
     },
