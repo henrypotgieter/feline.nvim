@@ -7,6 +7,7 @@ local provider_categories = {
     file = lazy_require('feline.providers.file'),
     lsp = lazy_require('feline.providers.lsp'),
     git = lazy_require('feline.providers.git'),
+    toggles = lazy_require('feline.providers.toggles'),
     custom = {},
 }
 
@@ -15,12 +16,27 @@ local get_provider_category = {
     vi_mode = 'vi_mode',
 
     position = 'cursor',
-    pastemode = 'cursor',
     isroot = 'cursor',
     line_percentage = 'cursor',
     scroll_bar = 'cursor',
     search_count = 'cursor',
     macro = 'cursor',
+
+    pastemodey = 'toggles',
+    pastemoden = 'toggles',
+    relnumy = 'toggles',
+    relnumn = 'toggles',
+    numy = 'toggles',
+    numn = 'toggles',
+    bly = 'toggles',
+    bln = 'toggles',
+    spy = 'toggles',
+    spn = 'toggles',
+    wry = 'toggles',
+    wrn = 'toggles',
+    diagy = 'toggles',
+    diagn = 'toggles',
+
 
     file_info = 'file',
     file_size = 'file',
