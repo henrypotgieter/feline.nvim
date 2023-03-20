@@ -52,15 +52,6 @@ function M.position(_, opts)
     end
 end
 
-function M.pastemode()
-    if vim.opt.paste:get() then
-        local status = ' PASTE '
-        return status
-    else
-        return ''
-    end
-end
-
 function M.isroot()
     if vim.g.isroot then
         return ' 💪'
